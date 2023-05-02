@@ -23,7 +23,7 @@ const Header =()=>{
           <NavDropdown title="Manage" menuVariant="dark" style={{fontSize:"18.1px",fontWeight:"bolder"}}>
               <Link className="dropdown-item" to={'/manage-books'}>Books</Link>
               <Link className="dropdown-item" to={'/manage-chapters'}>Chapters</Link>
-              <Link className="dropdown-item" to={''}>Readers</Link>
+              <Link className="dropdown-item" to={'/manage-readers'}>Readers</Link>
             </NavDropdown>
           </Nav>
           

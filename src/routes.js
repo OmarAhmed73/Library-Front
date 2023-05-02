@@ -11,6 +11,9 @@ import Requests from "./pages/Requests/Requests";
 import ManageChapters from "./pages/ManageChapters/ManageChapters";
 import UpdateChapters from "./pages/ManageChapters/UpdateChapters"
 import AddChapters from "./pages/ManageChapters/AddChapters"
+import ManageReaders from "./pages/ManageReaders/ManageReaders"
+import UpdateReaders from "./pages/ManageReaders/UpdateReaders"
+import AddReaders from "./pages/ManageReaders/AddReader"
 
 export const routes = createBrowserRouter([
    {
@@ -63,6 +66,23 @@ export const routes = createBrowserRouter([
         {
           path: 'add',
           element: <AddChapters/>
+        }
+      ]
+    },
+    {
+      path: '/manage-readers',
+      children:[
+        {
+          path: '',
+          element: <ManageReaders/>
+        },
+        {
+          path: ':id',
+          element: <UpdateReaders/>
+        },
+        {
+          path: 'add',
+          element: <AddReaders/>
         }
       ]
     },
