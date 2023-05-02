@@ -46,6 +46,38 @@ const BookDetails=()=>{
     </Table>
     <Link className="btn btn-dark" variant="primary" >Request Book</Link>
        </div>
+       <hr></hr>
+       <div>
+       <Table striped bordered hover variant="dark">
+      <thead>
+          <tr style={{boxSizing:"20px"}}>
+          <td colSpan={2}><h3>Book Chapters</h3></td>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><h5>Chapter 1</h5></td>
+          <td >chapter name</td>
+        </tr>
+        <tr>
+          <td><h5>Chapter 2</h5></td>
+          <td >chapter name</td>
+        </tr>
+        <tr>
+          <td><h5>Chapter 3</h5></td>
+          <td >chapter name</td>
+        </tr>
+        <tr>
+          <td><h5>Chapter 4</h5></td>
+          <td >chapter name</td>
+        </tr>
+        <tr>
+          <td><h5>Chapter 5</h5></td>
+          <td>chapter name </td>
+        </tr>
+      </tbody>    
+    </Table>
+       </div>
     </div>)
 }
 
